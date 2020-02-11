@@ -4,28 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gradio</title>
+    <title>Wand</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/custom.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+
 <body class="is-boxed">
-    <div class="body-wrap">
+    <class="body-wrap">
         <header class="site-header">
             <div class="container">
                 <div class="site-header-inner">
                     <div class="brand header-brand">
                         <h1 class="m-0">
 							<a href="index.html">
-								<img id="logo" class="header-logo-image" src="dist/images/logo.png" alt="Logo">
+								<img id="logo" class="header-logo-image"
+                                     src="dist/images/logo-with-text-no-bg.png"
+                                     alt="Logo">
                             </a>
                         </h1>
                     </div>
                     <nav>
                         <a class="current" href="index.html">Home</a>
-                        <a href="blog.html">Blog</a>
                         <a href="#lets-chat">Contact</a>
                     </nav>
                 </div>
@@ -37,105 +39,93 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Your <span id="data">Data</span>. At Its Full Potential.</h1>
-	                        <p class="hero-paragraph">You have lots of data. We use the latest research to clean, label, and augment it.</p> 
-	                        <p class="hero-paragraph">See how powerful your dataset can really be.</p> 
-	                        <div class="hero-cta"><a class="button button-primary" href="#lets-chat">Contact Us</a></div>
+                            <h2 class="hero-title mt-0"><span id="data">
+                                ML-powered </span> video calls </h2>
+                            <h3 class="hero-title mt-0">Fast, efficient,
+                                 and  <span id="data">
+                                crystal clear</span> </h3>
+	                        <h3 class="hero-title mt-0"> <span
+                                    id="data">High resolution </span>on low
+                                latency</h3>
+                            <h3 class="hero-title mt-0"> One hundred times
+                                <span
+                                    id="data"> less
+                                data transmission</span> </h3>
+
+
+
 						</div>
 						<div class="hero-figure anime-element">
-							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
-								<rect width="528" height="396" style="fill:transparent;" />
-							</svg>
-							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
-							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
-							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
-							<div class="hero-figure-box hero-figure-box-05"></div>
-							<div class="hero-figure-box hero-figure-box-06"></div>
-							<div class="hero-figure-box hero-figure-box-07"></div>
-							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
-							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
-							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
-						</div>
+
+                        <img src="dist/images/video-call.png">
+                        </div>
+
                     </div>
                 </div>
             </section>
-
+            <section class="cta section" id="lets-chat">
+				<div class="container">
+					<div class="cta-inner section-inner">
+                        <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
+                            <div class="label-row">
+                              <label>
+                                <input type="email" name="email"
+                                       placeholder="Enter your email">
+                              </label>
+                            </div>
+                            <div class="cta-cta">
+                                <input type="submit"
+                                       value="Request Access"
+                                       class="button button-primary button-wide-mobile">
+                            </div>
+                        </form>
+					</div>
+				</div>
+			</section>
             <section class="features section">
                 <div class="container">
 					<div class="features-inner section-inner has-bottom-divider">
                         <div class="pricing-header text-center">
-                            <h2 class="section-title mt-0">How Gradio Can Help</h2>
-                            <p class="section-paragraph mb-0">We’re bringing our machine learning research from Stanford to the industry to improve your dataset and decrease labeling requirements by up to 55%. </p>
+                            <h1 class="section-title mt-0">How we do it</h1>
                         </div>
-                        <div class="features-wrap">
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/valuate.svg">
-                                    </div>
-                                    <h4 class="feature-title mt-24">Valuate Unlabeled Data</h4>
-                                    <p class="text-sm mb-0">Of your unlabeled data, Gradio identifies highest value points to label for maximum model improvements. </p>
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/identify.svg">
-                                    </div>
-                                    <h4 class="feature-title mt-24">Identify Mislabeled Data</h4>
-                                    <p class="text-sm mb-0">Gradio identifies the datapoints that are mislabeled and are hurting your model performance.</p>
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/augment.svg">
-                                    </div>
-                                    <h4 class="feature-title mt-24">Augment Your Data</h4>
-                                    <p class="text-sm mb-0">Based on your existing data, Gradio generates new data to expand into new use cases and increase coverage.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        <div class="hero-figure anime-element">
 
-            <section class="pricing section">
-                <div class="container-sm">
-                    <div class="pricing-inner section-inner">
-                        <div class="pricing-header text-center">
-                            <h2 class="section-title mt-0">Highlighted Posts</h2>
+                        <img src="dist/images/mona-lisa-talk_1024.gif"
+                             alt="this slowpoke moves" />
                         </div>
-						<div class="pricing-tables-wrap">
-                            <div class="pricing-table">
-                                <div class="pricing-table-inner is-revealing">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header pb-24">
-                                            <div class="pricing-table-price"><span class="h4">Performing with Limited Labeling Resources</span></div>
-                                        </div>
-                                        <img src="dist/images/graph1.png">
-										<div class="text-xs pt-24 pb-24">Gradio can maximize a limited labeling budget by directing labeling towards high value datapoints, as demonstrated on a public customer complaint dataset.</div>
-                                    </div>
-                                    <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="blog1.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pricing-table">
-                                <div class="pricing-table-inner is-revealing">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header pb-24">
-                                            <div class="pricing-table-price"><span class="h4">Augmentation vs. Small Datasets and Class Imbalance</span></div>
-                                        </div>
-                                        <img src="dist/images/graph2.png">
-										<div class="text-xs pt-24 pb-24">Gradio can mitigate the effects of a small dataset with class imbalance, as demonstrated on a public clinical notes dataset.</div>
-                                    </div>
-                                    <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="blog2.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                 <div class="hero-figure anime-element">
+                                 <img src="https://media.giphy.com/media/IbaMP2hpQwPefuki8A/giphy.gif"
+                             alt="this slowpoke moves" />
+                                 </div>
+                                    <h4 class="feature-title mt-24">Few
+                                        Shot Learning</h4>
+                                    <h4> For every <span
+                                    id="data"> one
+                        hundred </span>frames in the video, we only
+                                transmit <span
+                            id="data">one</span>, and use <span
+                                    id="data"><a
+                            href="https://arxiv.org/pdf/1905.08233.pdf">
+                                            adversarial learning </a></span> to
+                                        fill in the gaps. </h4
+                        <div class="hero-figure anime-element">
+                                 <img src="dist/images/super-resolution.png"
+                             alt="this slowpoke moves" />
+                                 </div>
+                                    <h4 class="feature-title mt-24">Super
+                                        resolution</h4>
+                                    <h4> Since we only transmit one frame
+                                        out of one hundred, we're able to
+                                        apply
+                                        <span
+                                    id="data"> <a
+                            href="https://arxiv.org/pdf/1905.08233.pdf">
+                                            super resolution techniques </a>
+                                        </span> to make sure the video hits
+                                         <span
+                            id="data">perfect quality.</span>
+                                        </h4>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -143,36 +133,17 @@
 			<section class="cta section" id="lets-chat">
 				<div class="container">
 					<div class="cta-inner section-inner">
-                        <h3 class="section-title mt-0">Let's Chat</h3>
                         <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
                             <div class="label-row">
                               <label>
-                                Name
-                                <input type="text" name="name">
-                              </label>
-                              <label>
-                                Email
-                                <input type="email" name="email">
+                                <input type="email" name="email"
+                                       placeholder="Enter your email">
                               </label>  
-                            </div>
-                            <div class="label-row">
-                              <label>
-                                Organization / Company
-                                <input type="text" name="organization">
-                              </label>
-                              <label>
-                                Domain
-                                <input type="text" name="domain" placeholder="e.g. Customer Support">
-                              </label>  
-                            </div>
-                            <div class="label-row">
-                              <label>
-                                Details
-                                <textarea name="details"></textarea>
-                              </label>
                             </div>
                             <div class="cta-cta">
-                                <input type="submit" class="button button-primary button-wide-mobile">
+                                <input type="submit"
+                                       value="Request Access"
+                                       class="button button-primary button-wide-mobile">
                             </div>
                         </form>
 					</div>
@@ -183,28 +154,13 @@
     <footer class="site-footer">
         <div class="container">
             <div class="site-footer-inner">
-                <ul class="footer-social-links list-reset">
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/company/gradio/about/">
-                            <span class="screen-reader-text">LinkedIn</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-                              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="gray"/>
-                            </svg>
-                          </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://twitter.com/teamGradio">
-                            <span class="screen-reader-text">Twitter</span>
-                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="gray"></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                      <a class="github-button" href="https://github.com/gradio-app/gradio-UI" data-size="large" data-show-count="true" aria-label="Star gradio-app/gradio-UI on GitHub">Star</a>                        
-                    </li>
-                </ul>                  
+
                 <div class="footer-copyright"><a target="_blank" id="pear" href="http://pear.vc"><img src="dist/images/pear.png"></a> <a target="_blank" href="http://stanford.edu"><img src="dist/images/stanford.png"></a></div>
+                <p> Video call icon made by <a
+                    href="https://www.flaticon.com/authors/freepik"
+                             title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/" title="Flaticon">
+                    www.flaticon.com</a></p>
             </div>
         </div>
     </footer>
