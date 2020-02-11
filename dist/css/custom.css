@@ -77,3 +77,9 @@ a.current {
     width: 100%;
     margin: 25px;
 }
+
+.feature-title,
+.mt-24 h3 {
+        text-align: center;
+
+}
