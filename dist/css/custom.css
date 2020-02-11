@@ -61,3 +61,19 @@ a.current {
 .footer-copyright img {
     height: 40px;
 }
+
+.demogif {
+    background-color: #e6e6e6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.demogif img {
+    height: 450px !important;
+}
+.site-footer-inner p {
+    text-align: center;
+    width: 100%;
+    margin: 25px;
+}

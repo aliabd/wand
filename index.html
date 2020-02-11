@@ -8,160 +8,161 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/custom.css">
-	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body class="is-boxed">
-    <class="body-wrap">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-							<a href="index.html">
-								<img id="logo" class="header-logo-image"
-                                     src="dist/images/logo-with-text-no-bg.png"
-                                     alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-          
-                </div>
+<class="body-wrap">
+<header class="site-header">
+    <div class="container">
+        <div class="site-header-inner">
+            <div class="brand header-brand">
+                <h1 class="m-0">
+                    <a href="index.html">
+                        <img id="logo" class="header-logo-image"
+                             src="dist/images/logo-with-text-no-bg.png"
+                             alt="Logo">
+                    </a>
+                </h1>
             </div>
-        </header>
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-                            <h2 class="hero-title mt-0"><span id="data">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <h2 class="hero-title mt-0"><span id="data">
                                 ML-powered </span> video calls </h2>
-                            <h3 class="hero-title mt-0">Fast, efficient,
-                                 and  <span id="data">
-                                crystal clear</span> </h3>
-	                        <h3 class="hero-title mt-0"> <span
-                                    id="data">High resolution </span>on low
-                                latency</h3>
-                            <h3 class="hero-title mt-0"> One hundred times
-                                <span
-                                    id="data"> less
-                                data transmission</span> </h3>
+                    <p>Fast, efficient,
+                        and  <span id="data">
+                                crystal clear</span> </p>
+                    <p> <span
+                            id="data">High resolution </span>on low
+                        latency</p>
+                    <p> One hundred times
+                        <span
+                                id="data"> less
+                                data transmission</span> </p>
 
 
 
-						</div>
-						<div class="hero-figure anime-element">
-                        <img src="dist/images/video-call.png">
-                        </div>
-
-                    </div>
                 </div>
-            </section>
-            <section class="cta section" id="lets-chat">
-				<div class="container">
-					<div class="cta-inner section-inner">
-                        <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
-                            <div class="label-row">
-                              <label>
-                                <input type="email" name="email"
-                                       placeholder="Enter your email">
-                              </label>
-                            </div>
-                            <div class="cta-cta">
-                                <input type="submit"
-                                       value="Request Access"
-                                       class="button button-primary button-wide-mobile">
-                            </div>
-                        </form>
-					</div>
-				</div>
-			</section>
-            <section class="features section">
-                <div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-                        <div class="pricing-header text-center">
-                            <h1 class="section-title mt-0">How we do it</h1>
-                        </div>
-                        <div class="hero-figure anime-element">
+                <div class="hero-figure anime-element">
+                    <img src="dist/images/video-call.png">
+                </div>
 
-                        <img src="dist/images/mona-lisa-talk_1024.gif"
-                             alt="this slowpoke moves" />
-                        </div>
-                                 <div class="hero-figure anime-element">
-                                 <img src="https://media.giphy.com/media/IbaMP2hpQwPefuki8A/giphy.gif"
-                             alt="this slowpoke moves" />
-                                 </div>
-                                    <h4 class="feature-title mt-24">Few
-                                        Shot Learning</h4>
-                                    <h4> For every <span
-                                    id="data"> one
+            </div>
+        </div>
+    </section>
+    <section class="cta section" id="lets-chat">
+        <div class="container">
+            <div class="cta-inner section-inner">
+                <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
+                    <div class="label-row">
+                        <label>
+                            <input type="email" name="email"
+                                   placeholder="Enter your email">
+                        </label>
+                    </div>
+                    <div class="cta-cta">
+                        <input type="submit"
+                               value="Request Access"
+                               class="button button-primary button-wide-mobile">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="features section">
+        <div class="container">
+            <div class="features-inner section-inner has-bottom-divider">
+                <div class="pricing-header text-center">
+                    <h1 class="section-title mt-0">How we do it</h1>
+                </div>
+                <h4 class="feature-title mt-24">Few
+                    Shot Learning</h4>
+                <p> For every <span
+                        id="data"> one
                         hundred </span>frames in the video, we only
-                                transmit <span
+                    transmit <span
                             id="data">one</span>, and use <span
-                                    id="data"><a
+                            id="data"><a
                             href="https://arxiv.org/pdf/1905.08233.pdf">
                                             adversarial learning </a></span> to
-                                        fill in the gaps. </h4
-                        <div class="hero-figure anime-element">
-                                 <img src="dist/images/super-resolution.png"
-                             alt="this slowpoke moves" />
-                                 </div>
-                                    <h4 class="feature-title mt-24">Super
-                                        resolution</h4>
-                                    <h4> Since we only transmit one frame
-                                        out of one hundred, we're able to
-                                        apply
-                                        <span
-                                    id="data"> <a
+                    fill in the gaps. This allows us to save data
+                    transmission, and makes up for latency. </p>
+                <div class="hero-figure anime-element demogif">
+                    <img src="dist/images/mona-lisa-talk_1024.gif" />
+                </div>
+                <div class="hero-figure anime-element demogif">
+                    <img
+                            src="https://media.giphy.com/media/IbaMP2hpQwPefuki8A/giphy.gif" height="400" />
+                </div>
+                <h4 class="feature-title mt-24">Super
+                    resolution</h4>
+                <p> Since we only transmit one frame
+                    out of one hundred, we're able to
+                    apply
+                    <span
+                            id="data"> <a
                             href="https://arxiv.org/pdf/1905.08233.pdf">
                                             super resolution techniques </a>
                                         </span> to make sure the video hits
-                                         <span
+                    <span
                             id="data">perfect quality.</span>
-                                        </h4>
-                    </div>
-                    </div>
+                </p>
+
+                <div class="hero-figure anime-element">
+                    <img src="dist/images/super-resolution.png"
+                         alt="this slowpoke moves" />
                 </div>
-            </section>
 
-			<section class="cta section" id="lets-chat">
-				<div class="container">
-					<div class="cta-inner section-inner">
-                        <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
-                            <div class="label-row">
-                              <label>
-                                <input type="email" name="email"
-                                       placeholder="Enter your email">
-                              </label>  
-                            </div>
-                            <div class="cta-cta">
-                                <input type="submit"
-                                       value="Request Access"
-                                       class="button button-primary button-wide-mobile">
-                            </div>
-                        </form>
-					</div>
-				</div>
-			</section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="site-footer-inner">
-
-                <div class="footer-copyright"><a target="_blank" id="pear" href="http://pear.vc"><img src="dist/images/pear.png"></a> <a target="_blank" href="http://stanford.edu"><img src="dist/images/stanford.png"></a></div>
-                <p> Video call icon made by <a
-                    href="https://www.flaticon.com/authors/freepik"
-                             title="Freepik">Freepik</a> from <a
-                        href="https://www.flaticon.com/" title="Flaticon">
-                    www.flaticon.com</a></p>
             </div>
         </div>
-    </footer>
+        </div>
+    </section>
 
-    <script src="dist/js/main.min.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>    
+    <section class="cta section" id="lets-chat">
+        <div class="container">
+            <div class="cta-inner section-inner">
+                <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
+                    <div class="label-row">
+                        <label>
+                            <input type="email" name="email"
+                                   placeholder="Enter your email">
+                        </label>
+                    </div>
+                    <div class="cta-cta">
+                        <input type="submit"
+                               value="Request Access"
+                               class="button button-primary button-wide-mobile">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-footer-inner">
+
+            <div class="footer-copyright"><a target="_blank" id="pear" href="http://pear.vc"><img src="dist/images/pear.png"></a> <a target="_blank" href="http://stanford.edu"><img src="dist/images/stanford.png"></a></div>
+            <p> Video call icon made by <a
+                    href="https://www.flaticon.com/authors/freepik"
+                    title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="dist/js/main.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
