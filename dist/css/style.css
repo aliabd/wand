@@ -1377,9 +1377,14 @@ label {
     padding-bottom: 88px
 }
 
+
 .hero-copy {
     position: relative;
-    z-index: 1
+    z-index: 1;
+}
+
+.hero-copy p {
+    font-size: xx-large !important;
 }
 
 .hero-cta {

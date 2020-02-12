@@ -63,14 +63,15 @@ a.current {
 }
 
 .demogif {
-    background-color: #e6e6e6;
     padding: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
 .demogif img {
+    background-color: #e6e6e6;
     height: 450px !important;
+    padding: 20px
 }
 .site-footer-inner p {
     text-align: center;
